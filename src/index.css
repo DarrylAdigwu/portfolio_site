@@ -125,8 +125,9 @@ main > section.headline {
 }
 
 main > section.headline > h1 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   margin: 0;
+  width: 100%;
 }
 
 main > section.headline > p {
@@ -139,12 +140,13 @@ main > section.headline > p {
     height: 0;
   }
   100% {
-    height: 7rem;
+    height: 6rem;
   }
 }
+
 section.headline > h1.highlight {
   color:#746250;
-  line-height: 3.5rem;
+  line-height: 3rem;
   animation: 2s growUp;
   overflow: hidden;
   margin-block: .5rem;
@@ -160,11 +162,6 @@ section.headline > h1.highlight {
 
   main > section.headline {
     padding: 0 2rem;
-  }
-
-  main > section.headline > h1 {
-    font-size: 2.5rem;
-    width: 100%;
   }
 
   main > section.headline > p {
