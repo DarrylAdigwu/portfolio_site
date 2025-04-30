@@ -1,0 +1,91 @@
+main > section.contact-container {
+  width: 100%;
+  min-width: 300px;
+  padding: 3rem 2rem;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #d8d1c6;
+  color: #2b2b29;
+}
+
+section.contact-container > h2 {
+  width: 100%;
+  font-size: 3rem;
+  margin-bottom: .5rem;
+  color: #746250;
+}
+
+section.contact-container > p {
+  margin-top: 0;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+section.contact-container > Form {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 6px;
+  margin-bottom: 3rem;
+}
+
+Form > label {
+  font-size: .875rem;
+  margin: 1rem 0;
+}
+
+Form > input {
+  border-radius: 6px;
+  padding: 10px 12px;
+  width: 100%;
+  height: 6vh;
+  min-height: 4rem;
+  margin-top: .25rem;
+  margin-bottom: 1rem;
+  border: 1px solid #746250;
+  border-style: inset;
+}
+
+Form > textarea {
+  width: 100%;
+  height: 12vh;
+  min-height: 8rem;
+  border-radius: 6px;
+  padding: 10px 12px 24px;
+  margin-top: .25rem;
+  margin-bottom: 1rem;
+}
+
+Form > button {
+  width: 100%;
+  height: 60px;
+  border-radius: 6px;
+  font-size: 1.25rem;
+  border: 1px solid #746250;
+  box-shadow: 2px 4px 4px 2px #746250;
+  background-color:#2b2b29;
+  color: #d8d1c6;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+Form > button:active {
+  border: 1px solid #746250;
+  background-color: #d8d1c6;
+  color: #2b2b29;
+  box-shadow: none;
+}
+
+@media only screen and (min-width: 600px) {
+
+  Form > input {
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  main > section.contact-container {
+    padding: 1rem 4rem;
+  }
+}

@@ -1,0 +1,18 @@
+<svg viewBox='0 0 218 218' xmlns='http://www.w3.org/2000/svg'>
+  <defs>
+    <filter id="grain">
+        <feTurbulence 
+          type="fractalNoise"
+          numOctaves="9"
+          stitchTiles="stitch"
+        >
+          <animate attributeName="baseFrequency" attributeType="XML" from="7.025" to="7" dur="1s" begin="0s" repeatCount="indefinite"/>
+        </feTurbulence>
+        <feColorMatrix values="1 0 0 9 -4
+                                1 0 0 9 -4 
+                                1 0 0 9 -4
+                                -0.8 1 0 0 0"/>
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" filter="url(#grain)"/>
+</svg>
