@@ -24,7 +24,7 @@ section.contact-container > p {
 
 section.contact-container > Form {
   width: 100%;
-  max-width: 800px;
+  max-width: 600px;
   border-radius: 6px;
   margin-bottom: 3rem;
 }

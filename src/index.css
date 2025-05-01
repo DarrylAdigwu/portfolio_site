@@ -115,7 +115,9 @@ main {
   min-height: calc(100% - 6rem); /* subtract header and main margin*/
   display: flex;
   align-content: center;
+  justify-self: center;
   flex-wrap: wrap;
+  max-width: 1800px;
 }
 
 main > section.headline {
@@ -279,7 +281,7 @@ section.headline > h1.highlight {
   header > nav#nav-bar > li a {
     text-decoration: none;
     color: #d8d1c6;
-    margin-left: 1rem;
+    margin-left: 1.75rem;
     font-size: 1.25rem;
   }
 
@@ -355,12 +357,16 @@ section.headline > h1.highlight {
 
 
 
+
 /* Footer */
 footer {
   display: flex;
   align-items: center;
+  justify-self: center;
   min-height: 12rem;
+  width: 100vw;
   min-width: 300px;
+  max-width: 1800px;
   background-color: #746250;
   padding: 1rem 2rem;
   margin: 0;
