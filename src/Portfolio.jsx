@@ -44,7 +44,7 @@ export default function Portfolio() {
     <>
       <main>
         <section className="headline">
-          <h1>Darryl Adigwu</h1>
+          <h1 className="name">Darryl Adigwu</h1>
           <h1 className="highlight">front-end <br/> web developer</h1>
           <p>
             I am a self-taught front-end web developer 

@@ -27,6 +27,9 @@ export default function About(props) {
           </p>
           <img src={half} alt="image of me"/>
         </div>
+        <div className="resume">
+          <button>Resume</button>
+        </div>
         <section id="skills-section" className="skills-container">
           <h3>my skills</h3>
           <div className="skills">

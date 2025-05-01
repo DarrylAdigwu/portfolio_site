@@ -2,6 +2,7 @@
 main > section.about-container {
   background-color: #d8d1c6;
   display: flex;
+  align-items: space-around;
   flex-wrap: wrap;
   color: #746250;
   padding: 3rem 2rem;
@@ -11,77 +12,121 @@ main > section.about-container {
 
 section.about-container > h2 {
   width: 100%;
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 0;
-  margin-bottom: .5rem;
 }
 
 section.about-container > div.about-info {
-  width: 80%;
-  max-width: 800px;
+  margin-block: 2rem;
 }
 
 div.about-info > p.about-descr {
   margin: 0;
-  width: 100%;
+  width: 80%;
   max-width: 500px;
 }
 
 div.about-info > img {
   height: 25vh;
-  margin-block: 2rem;
+  min-height: 10rem;
+  margin-top: 2rem;
   border-left: 2px solid #746250;
   border-bottom: 2px solid #746250;
 }
 
+section.about-container > div.resume {
+  width: 100%;
+  height: fit-content;
+}
+
+div.resume > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 150px;
+  border-radius: 6px;
+  padding: .5rem .75rem;
+  font-size: 1.25rem;
+  background-color: #252524;
+  color: #d8d1c6;
+  border: none;
+}
+
 /* Skills page */
 section.about-container > section.skills-container {
+  position: relative;
   width: 100%;
+  max-width: 400px;
+  right: 0;
+  margin-block: 2rem;
+  padding: 1rem 0;
 }
 
 section.skills-container > h3 {
   font-size: 1.5rem;
   margin: 0;
   margin-bottom: 1rem;
+  background-color: #d8d1c6;
+  border: 1px solid #746250;
+  border-left: none;
+  border-right: none;
+  color: #746250;
+  border-radius: 6px;
+  padding: .5rem 1rem;
 }
 
 section.skills-container > div.skills {
   display: grid;
   justify-content: center;
-  justify-items: center;
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
   gap: 6px;
-  width: 80%;
   border-radius: 6px;
   height: fit-content;
+  min-width: fit-content;
 }
 
 div.skills > span {
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #746250;
   border-radius: 6px;
-  padding: 1vh;
+  padding: 1vh .75vh;
+  width: 100%;
   color: #d8d1c6;
   text-align: center;
 }
 
+/* Screen sizes 380px */
+@media only screen and (min-width: 380px) {
+  section.about-container > h2 {
+    font-size: 3rem;
+  }
+
+}
+
 /* Screen sizes 620px */
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 600px) {
+  main > section.about-container {
+    align-content: space-evenly;
+  }
+  
   section.about-container > div.about-info {
     display: flex;
-    height: 16rem;
-    max-width: 600px;
+    height: 20rem;
     border-bottom: 2px solid #746250;
+    max-width: 600px;
     margin-block: 3rem;
   }
-
+  
   div.about-info > p.about-descr {
-    width: 60%;
     height: 100%;
     font-size: 1rem;
+    width: 80%;
   }
-
+  
   div.about-info > img {
     height: 100%;
     margin: 0;
@@ -89,60 +134,82 @@ div.skills > span {
     border-bottom: none;
   }
 
+  div.resume > button {
+    height: 70px;
+    width: 200px;
+  }
+
   /* Skills page */
+  section.about-container > section.skills-container {
+    width: 100%;
+    max-width: none;
+    margin-block: 3rem;
+  }
+
+  section.skills-container > h3 {
+    width: 60%;
+    max-width: 600px;
+    min-width: 450px;
+  }
+
   section.skills-container > div.skills {
     grid-template-columns: repeat(4, 1fr);
+    width: 60%;
     max-width: 600px;
+    min-width: 450px;
+  }
+
+  div.skills > span {
+    padding: .75rem .75rem;
   }
 }
 
 /* Screen sizes 1024px */
 @media only screen and (min-width: 1024px) {
   main > section.about-container {
-    min-height: 100vh;
     padding: 3rem 4rem;
-    align-content: start;
-  }
-
-  section.about-container > div.about-info {
-    height: 45vh;
-  }
-
-  div.about-info > p.about-descr {
-    font-size: 1.125rem;
-    width: 50%;
-  }
-
-  section.skills-container > h3 {
-    font-size: 2rem;
-  }
-
-  div.skills > span {
-    font-size: 1rem;
   }
 }
 
-/* Screen sizes 1200ppx */
+/* Screen sizes 1200px */
 @media only screen and (min-width: 1200px) {
-  main > section.about-container {
-    display: flex;
-  }
-
+  
   section.about-container > div.about-info {
-    
-    max-width: 60%;
+    height: 24rem;
+    max-width: 600px;
+  }
+  
+  div.about-info > p.about-descr {
+    height: 100%;
+    font-size: 1rem;
+    width: 80%;
   }
 
-  div.about-info > p.about-descr {
-    font-size: 1rem;
-    width: 50%;
+  div.resume > button {
+    height: 70px;
+    width: 200px;
+  }
+
+  section.about-container > section.skills-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    right: 0;
+    margin-block: 2rem;
+    padding: 1rem 0;
+  }
+  
+  section.skills-container > h3 {
+    width: 100%;
+    max-width: 700px;
   }
 
   section.skills-container > div.skills {
-    max-width: 40%;
+    width: 100%;
+    max-width: 700px;
   }
 
   div.skills > span {
-    font-size: 1rem;
+    padding: 1rem 1rem;
   }
 }

@@ -15,6 +15,7 @@ body {
 
 div#content-wrapper {
   min-height: calc(100vh - 18rem);
+  min-width: 300px;
   color: white;
 }
 
@@ -25,6 +26,7 @@ header {
   align-items: center;
   height: 6rem;
   width: 100vw;
+  min-width: 300px;
   padding: 0 1rem;
 }
 
@@ -51,6 +53,10 @@ header > nav#burger > li {
   width: 100%;
 }
 
+header > nav#burger.non-active {
+  display: none;
+}
+
 header > nav#off-screen {
   display: none;
 }
@@ -71,12 +77,12 @@ header > nav#off-screen.active {
 
 nav#off-screen > button {
   position: absolute;
-  height: 6rem;
+  height: 5rem;
   aspect-ratio: 1/1;
   display: flex;
   align-items: center;
   justify-content: right;
-  padding: 2rem;
+  padding: 0 1rem;
   background: none;
   border: none;
   font-size: 4rem;
@@ -95,7 +101,7 @@ nav#off-screen > li {
 
 nav#off-screen > li a {
   color: #d8d1c6;
-  font-size: 4rem;
+  font-size: 2.5rem;
   text-decoration: none;
 }
 
@@ -119,13 +125,13 @@ main > section.headline {
   width: 100%;
   max-width: 600px;
   margin: 0;
-  padding: 1rem;
-  height: calc(100vh - 6rem);
+  padding: 3rem 1rem;
+  min-height: calc(100vh - 6rem);
   max-height: 100vh;
 }
 
 main > section.headline > h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 0;
   width: 100%;
 }
@@ -140,35 +146,19 @@ main > section.headline > p {
     height: 0;
   }
   100% {
-    height: 6rem;
+    height: 5rem;
   }
 }
 
 section.headline > h1.highlight {
   color:#746250;
-  line-height: 3rem;
+  line-height: 2.5rem;
   animation: 2s growUp;
   overflow: hidden;
   margin-block: .5rem;
 }
 
 
-
-/* Screen size for smaller mobile */
-@media only screen and (min-width: 380px) {
-  header {
-    padding: 0 2rem;
-  }
-
-  main > section.headline {
-    padding: 0 2rem;
-  }
-
-  main > section.headline > p {
-    font-size: 1rem;
-  }
-  
-}
 
 /* Adjust svg filter for screen sizes 240px - 290px */
 @media only screen and (min-width: 240px) and (max-width: 290px) {
@@ -191,20 +181,85 @@ section.headline > h1.highlight {
   }
 }
 
+/* Adjust svg filter for screen sizes 480px - 530px */
+@media only screen and (min-width: 480px) and (max-width: 515px) {
+  body {
+    background-image: url("./assets/images/grain2.svg");
+  }
+}
+
+/* Adjust svg filter for screen sizes 700px - 820px */
+@media only screen and (min-width: 700px) and (max-width: 820px) {
+  body {
+    background-image: url("./assets/images/grain2.svg");
+  }
+}
+
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  body {
+    background-image: url("./assets/images/grain2.svg");
+  }
+}
+/* Screen size for smaller mobile */
+@media only screen and (min-width: 380px) {
+  header {
+    padding: 0 2rem;
+  }
+
+  main > section.headline {
+    padding: 0 2rem;
+  }
+  
+  main > section.headline > h1 {
+    font-size: 2.5rem;
+  }
+
+  main > section.headline > p {
+    font-size: 1rem;
+  }
+
+  nav#off-screen > button {
+    padding: 0 2rem;
+  }
+
+  nav#off-screen > li a {
+    font-size: 4rem;
+  }
+
+  @keyframes growUp {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 5.125rem;
+    }
+  }
+  
+}
+
+
 /* Screen size for 480px */
 @media only screen and (min-width: 480px) {
   main > section.headline > h1 {
     font-size: 3rem;
   }
 
+  section.headline > h1.highlight {
+    line-height: 3rem;
+  }
+
+  @keyframes growUp {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 6.125rem;
+    }
+  }
+
 }
 
-/* Adjust svg filter for screen sizes 480px - 530px */
-@media only screen and (min-width: 450px) and (max-width: 515px) {
-  body {
-    background-image: url("./assets/images/grain2.svg");
-  }
-}
 
 /* Screen size for 600px */
 @media only screen and (min-width: 620px) {
@@ -228,15 +283,34 @@ section.headline > h1.highlight {
     font-size: 1.25rem;
   }
 
+  header > nav#nav-bar > li a:hover {
+    border: 2px solid #746250;
+    border-left: none;
+    border-right: none;
+    border-radius: 6px;
+    padding: 0 .25rem .25rem;
+    color: #746250;
+  }
+
+  main > section.headline > h1 {
+    font-size: 3.5rem;
+  }
+
+  section.headline > h1.highlight {
+    line-height: 3.5rem;
+  }
+
+  @keyframes growUp {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 7rem;
+    }
+  }
+
   main > section.headline > p {
     width: 80%;
-  }
-}
-
-/* Adjust svg filter for screen sizes 700px - 820px */
-@media only screen and (min-width: 700px) and (max-width: 1020px) {
-  body {
-    background-image: url("./assets/images/grain2.svg");
   }
 }
 
@@ -250,44 +324,43 @@ section.headline > h1.highlight {
     width: 100%;
     max-width: 800px;
     padding: 0 4rem;
-  }
-  
-  main > section.headline > h1 {
-    font-size: 3rem;
-    width: 100%;
-  }
-}
-
-/* Screen size for 1200px */
-@media only screen and (min-width: 1200px) {
-  header {
-    padding: 0 4rem;
-  }
-
-  main > section.headline {
-    width: 100%;
-    max-width: 800px;
-    padding: 0 4rem;
-  }
+  } 
   
   main > section.headline > h1 {
     font-size: 4rem;
   }
 
+  section.headline > h1.highlight {
+    line-height: 4rem;
+  }
+
+  @keyframes growUp {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 8rem;
+    }
+  }
+  
 }
 
-@media only screen and (min-width: 1400px) and (max-width: 1600px) {
-  body {
-    background-image: url("./assets/images/grain2.svg");
+/* Screen size for 1200px */
+@media only screen and (min-width: 1200px) {
+  main > section.headline {
+    max-width: 800px;
   }
+
 }
+
 
 
 /* Footer */
 footer {
   display: flex;
   align-items: center;
-  height: 12rem;
+  min-height: 12rem;
+  min-width: 300px;
   background-color: #746250;
   padding: 1rem 2rem;
   margin: 0;

@@ -6,8 +6,10 @@ export default function Header() {
   
   function dropDown(event) {
     const offScreen = document.getElementById("off-screen");
+    const burgerBtn = document.getElementById("burger")
     if(event) {
-      offScreen.classList.toggle("active")
+      offScreen.classList.toggle("active");
+      burgerBtn.classList.toggle("non-active")
     }
   }
   
