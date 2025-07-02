@@ -87,10 +87,15 @@ div.tools > span.display-tools {
 @media only screen and (min-width: 600px) {
   section.projects-container > div.projects-list {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     justify-content: space-between;
-    max-width: 600px;
+    max-width: 100%;
+  }
+  
+  div.projects-list > div.project {
+    height: fit-content;
+    min-height: 24.35rem;
   }
 }
 
