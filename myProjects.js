@@ -25,7 +25,7 @@ export default [
       src: `${portfolio_site}`,
       alt: "Photo of wedding site"
     },
-    skills: ["React", "Docker", "Express.js", "HTML", "CSS", "Javascript", "Bootstrap", "Render"],
+    skills: ["React", "HTML", "CSS", "Javascript", "Bootstrap", "Render"],
     description: `Portfolio site.
     `,
   },
