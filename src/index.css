@@ -2,6 +2,8 @@
   font-size: 16px;
   font-family: tahoma;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -14,6 +16,7 @@ body {
 }
 
 div#content-wrapper {
+  width: 100%;
   min-height: calc(100vh - 18rem);
   min-width: 300px;
   color: white;
@@ -117,7 +120,7 @@ main {
   align-content: center;
   justify-self: center;
   flex-wrap: wrap;
-  max-width: 1800px;
+  /* max-width: 1800px; */
 }
 
 main > section.headline {
@@ -366,7 +369,7 @@ footer {
   min-height: 12rem;
   width: 100vw;
   min-width: 300px;
-  max-width: 1800px;
+  /* max-width: 1800px; */
   background-color: #746250;
   padding: 1rem 2rem;
   margin: 0;
