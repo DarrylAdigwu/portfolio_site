@@ -6,7 +6,7 @@
           numOctaves="9"
           stitchTiles="stitch"
         >
-          <animate attributeName="baseFrequency" attributeType="XML" from="7.025" to="7" dur="1s" begin="0s" repeatCount="indefinite"/>
+          <animate attributeName="baseFrequency" attributeType="XML" from="7" to="7.025" dur="1s" begin="0s" repeatCount="indefinite"/>
         </feTurbulence>
         <feColorMatrix values="1 0 0 9 -4
                                 1 0 0 9 -4 

@@ -1,7 +1,6 @@
 /* About page */
 main > section.about-container {
   background-color: #d8d1c6;
-  background-image: url("/src/assets/images/grain.svg");
   background-blend-mode: overlay;
   /* background-image: url("../images/grain2.svg"); */
   color: #746250;
@@ -266,7 +265,6 @@ div.skills > span {
     /* border: 2px solid #746250;
     border-right: 2px solid #746250; */
     background-color: rgba(174,70,28, .125);
-    background-image: url("../images/grain.svg");
   }
 
   div.about-img-full > img {
