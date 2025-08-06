@@ -1,6 +1,7 @@
 import React from "react";
 import '../assets/css/about.css';
-import half from "../assets/images/half.png"
+import half from "../assets/images/half.png";
+import full from "../assets/images/dslate.png";
 
 export default function About(props) {
   // Return each individual skill
@@ -13,19 +14,39 @@ export default function About(props) {
   
   return(
     <section id="about-section" className="about-container">
+      
+      <div className="about-grid">
       <h2>about me</h2>
-        <div className="about-info">
-          <p className="about-descr">
-            My name is Darryl. I am an aspiring front-end web developer.
-            I have focused the last year and some change of my life on
-            making the transition from a career in sales to a career in 
-            web development. <br/>
-            <br/>
-            I enjoy hiking, playing basketball, and 
-            being with friends and family. Most importantly, I put my 
-            faith in Jesus Christ.
+        <div className="about-descr">
+          <p>
+            My name is Darryl. I'm an aspiring web developer.
+            I gravitate towards front-end development because I 
+            enjoy structuring layouts, making content visually 
+            appealing, and creating user-friendly web experiences. 
+            However, throughout my journey learning front-end development 
+            I have picked up skills in DevOps and Back-end development
+            in order to create fully-functional projects.
           </p>
+
+          <p className="middle">
+            Learning new technologies and tackling challenges are the aspects within
+            coding and development that excite me the most. Solving problems, creating
+            solutions, and seeing functional products is a process I have always been 
+            passionate about.
+          </p>
+
+          <p>
+            Outside of coding, I enjoy outdoor activities, playing basketball,
+            spending time with friends and family, and most importantly growing 
+            in my faith.
+          </p>
+        </div>  
+        
+        <div className="about-img">
           <img src={half} alt="image of me"/>
+        </div>
+        <div className="about-img-full">
+          <img src={full} alt="image of me"/>
         </div>
         <div className="resume">
           <button>Resume</button>
@@ -36,6 +57,8 @@ export default function About(props) {
             {skillList}
           </div>
         </section>
+
+      </div>
     </section>
   )
 }

@@ -21,7 +21,7 @@ export default function Projects(props) {
           <a href={`${project.link}`} target="_blank">
             <img src={`${project.image.src}`} alt={`${project.image.alt}`}/>
           </a>
-          <a href={`${project.link}`}>
+          <a href={`${project.link}`} target="_blank">
             <h3>{project.title}</h3>
           </a>
         </div>

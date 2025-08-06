@@ -3,7 +3,6 @@ main > section.projects-container {
   width: 100%;
   min-width: 300px;
   padding: 3rem 2rem;
-  background-color: #252524;
   margin: 0;
 }
 
@@ -47,11 +46,11 @@ div.project > div.project-visual > a > img:hover {
 
 div.project > div.project-visual > a {
   text-decoration: none;
-  color:#746250;
 }
 
 div.project > div.project-visual > a > h3 {
   margin-block: .5rem;
+  color:#746250;
 }
 
 div.project > div.project-visual > a > h3:hover {
@@ -84,7 +83,11 @@ div.tools > span.display-tools {
   border-radius: 4px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
+  main > section.projects-container {
+    padding: 3rem 4rem;
+  }
+
   section.projects-container > div.projects-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -95,13 +98,35 @@ div.tools > span.display-tools {
   
   div.projects-list > div.project {
     height: fit-content;
-    min-height: 24.35rem;
+    min-height: 24.83rem;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  main > section.projects-container {
-    padding: 3rem 4rem;
+  section.projects-container > div.projects-list {
+    max-width: 100%;
+    gap: .5rem;
+  }
+
+  div.projects-list > div.project {
+    height: fit-content;
+    min-height: fit-content;
+    margin: 0;
+  }
+
+  div.project p.project-descr {
+    display: none;
+  }
+
+  div.project div.tools {
+    display: none;
+  }
+
+  div.project:hover p.project-descr,
+  div.project:hover div.tools, 
+  div.project:active p.project-descr, 
+  div.project:active div.tools  {
+    display: flex;
   }
 
 }
