@@ -37,7 +37,6 @@ div.about-descr {
   margin-bottom: 2rem;
   width: 100%;
   max-width: 600px;
-  border: 1px solid red;
 }
 
 div.about-descr > p {
@@ -161,6 +160,11 @@ div.skills > span {
     grid-gap: 2.5rem;
   }
 
+  div.about-grid > h2 {
+    margin-bottom: 0;
+  }
+
+
   div.about-descr {
     margin: 0;
     max-width: none;
@@ -217,17 +221,24 @@ div.skills > span {
   }
 }
 
-/* Screen sizes 824px */
-@media only screen and (min-width: 800px) {
+/* Screen sizes 800px */
+@media only screen and (min-width: 820px) {
   div.about-descr > p {
     line-height: 1.3rem;
+  }
+}
+
+/* Screen sizes 865px */
+@media only screen and (min-width: 890px) {
+  div.about-descr > p {
+    line-height: 1.5rem;
   }
 }
 
 /* Screen sizes 1024px */
 @media only screen and (min-width: 1024px) {
   main > section.about-container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   section.about-container > div.about-grid  {
@@ -240,6 +251,10 @@ div.skills > span {
     ;
     grid-template-rows: auto 16rem auto auto;
     align-items: center;
+  }
+
+  div.about-grid > h2 {
+    font-size: 4rem;
   }
 
   div.about-descr {
@@ -282,12 +297,15 @@ div.skills > span {
 
 /* Screen sizes 1200px */
 @media only screen and (min-width: 1200px) {
-  /* section.about-container > div.about-grid  {
-    grid-template-rows: 30vh 1fr 1fr;
+  div.about-grid > h2 {
+    font-size: 5rem;
+  }
+
+  div.about-descr {
+    align-content: space-between;
   }
 
   div.about-descr > p {
     line-height: 1.5rem;
-  } */
-  
+  }
 }

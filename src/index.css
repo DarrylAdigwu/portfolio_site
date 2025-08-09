@@ -267,7 +267,7 @@ section.headline > h1.highlight {
 }
 
 
-/* Screen size for 600px */
+/* Screen size for 768px */
 @media only screen and (min-width: 768px) {
   header {
     padding: 0 4rem;
@@ -294,18 +294,18 @@ section.headline > h1.highlight {
   }
 
   header > nav#nav-bar > li a:hover {
-    border: 2px solid #746250;
+    border: 2px solid #ae461c;
     border-left: none;
     border-right: none;
     border-radius: 6px;
     padding: 0 .25rem .25rem;
-    color: #746250;
+    color: #ae461c;
   }
 
   main > section.headline {
     width: 100%;
     max-width: 800px;
-    padding: 0 4rem;
+    padding: 0 0 0 4rem;
   } 
 
   main > section.headline > h1 {
@@ -333,11 +333,15 @@ section.headline > h1.highlight {
 /* Screen size for 1024px */
 @media only screen and (min-width: 1024px) {
   main > section.headline > h1 {
-    font-size: 4rem;
+    max-width: none;
+  }
+
+  main > section.headline > h1 {
+    font-size: 5rem;
   }
 
   section.headline > h1.highlight {
-    line-height: 4rem;
+    line-height: 5rem;
   }
 
   @keyframes growUp {
