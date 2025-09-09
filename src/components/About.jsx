@@ -14,7 +14,7 @@ export default function About(props) {
   
   // Fetch resume pdf
   function resumeDownload() {
-    const resumePdf = "../../public/files/darryls-resume.pdf";
+    const resumePdf = "/files/darryls-resume.pdf";
     console.log(resumePdf)
     const link = document.createElement("a");
     link.href = resumePdf;
