@@ -16,7 +16,12 @@ export default function About(props) {
     <section id="about-section" className="about-container">
       
       <div className="about-grid">
-      <h2>about me</h2>
+        <h2 
+        ref={props.titleRef} 
+        className={`section-title ${props.isObserved ? `title-show` : null}`}
+        >
+          about me
+        </h2>
         <div className="about-descr">
           <p>
             My name is Darryl. I'm an aspiring web developer.

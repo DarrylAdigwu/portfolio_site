@@ -37,7 +37,14 @@ export default function Projects(props) {
 
   return(
     <section id="projects-section" className="projects-container">
-      <h2>projects</h2>
+      <div className="projects-header">
+        <h2
+        ref={props.titleRef} 
+        className={`section-title ${props.isObserved ? `title-show` : null}`}
+        >
+          projects
+        </h2>
+      </div>
       <div className="projects-list">
         {projectsList}
       </div>

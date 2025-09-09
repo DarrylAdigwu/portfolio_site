@@ -1,10 +1,16 @@
 * {
   font-size: 16px;
-  font-family: tahoma;
+  font-family: "tahoma";
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   color: #d8d1c6;
+}
+
+.russo-one-regular {
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
@@ -107,6 +113,7 @@ nav#off-screen > li a {
   color: #d8d1c6;
   font-size: 2.5rem;
   text-decoration: none;
+  font-family: "Russo One";
 }
 
 nav#off-screen > li a:hover {
@@ -157,14 +164,45 @@ main > section.headline > p {
 }
 
 section.headline > h1.highlight {
-  color:#ae461c;
+  color: #914c21;
+  font-family: "Russo One";
   line-height: 2.5rem;
+  height: 5rem;
   animation: 2s growUp;
   overflow: hidden;
   margin-block: .5rem;
 }
 
+/* section.headline > h1.name {
+    font-family: "Russo One";
+} */
 
+
+@keyframes heightUp {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+h2.section-title {
+  font-size: 3rem;
+  overflow: hidden;
+  height: 0;
+  margin-bottom: 2rem;
+  color: #914c21;
+  /* opacity: 0; */
+  font-family: "Russo One";
+}
+
+h2.title-show {
+  opacity: 1;
+  height: 7rem;
+  max-height: 6rem;
+  animation: heightUp 2s ease-in;
+}
 
 /* Adjust svg filter for screen sizes 240px - 290px */
 @media only screen and (min-width: 240px) and (max-width: 290px) {
@@ -286,20 +324,33 @@ section.headline > h1.highlight {
     list-style: none;
   }
 
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+
   header > nav#nav-bar > li a {
     text-decoration: none;
     color: #d8d1c6;
-    margin-left: 1.75rem;
+    margin: 0 1.125rem;
+    padding: 0 .25rem;
     font-size: 1.25rem;
+    font-family: "Russo One";
   }
 
   header > nav#nav-bar > li a:hover {
-    border: 2px solid #ae461c;
+    border: 2px solid #914c21;
     border-left: none;
     border-right: none;
     border-radius: 6px;
-    padding: 0 .25rem .25rem;
-    color: #ae461c;
+    padding: 0 0 .25rem;
+    text-decoration: line-through;
+    color: #914c21;
+    animation: fadeIn 300ms ease-in;
   }
 
   main > section.headline {
@@ -314,6 +365,7 @@ section.headline > h1.highlight {
 
   section.headline > h1.highlight {
     line-height: 3.5rem;
+    height: 7.5rem;
   }
 
   @keyframes growUp {
@@ -321,8 +373,12 @@ section.headline > h1.highlight {
       height: 0;
     }
     100% {
-      height: 7rem;
+      height: 7.5rem;
     }
+  }
+
+  h2.section-title {
+    margin-bottom: 0;
   }
 
   main > section.headline > p {
@@ -342,6 +398,7 @@ section.headline > h1.highlight {
 
   section.headline > h1.highlight {
     line-height: 5rem;
+    height: 10.5rem;
   }
 
   @keyframes growUp {
@@ -349,10 +406,13 @@ section.headline > h1.highlight {
       height: 0;
     }
     100% {
-      height: 8rem;
+      height: 10.5rem;
     }
   }
-  
+
+  h2.section-title {
+    font-size: 4rem;
+  }
 }
 
 /* Screen size for 1200px */
@@ -361,9 +421,10 @@ section.headline > h1.highlight {
     max-width: 800px;
   }
 
+  h2.section-title {
+    font-size: 5rem;
+  }
 }
-
-
 
 
 /* Footer */
@@ -374,8 +435,7 @@ footer {
   min-height: 12rem;
   width: 100vw;
   min-width: 300px;
-  /* max-width: 1800px; */
-  background-color: #746250;
+  background-color: #2b2b29;
   padding: 1rem 2rem;
   margin: 0;
   color: white;

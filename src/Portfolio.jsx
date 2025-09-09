@@ -40,6 +40,41 @@ export default function Portfolio() {
   const projects = loader.myProjects;
   const skills = loader.skills;
 
+  const observeRef = React.useRef(null);
+  const [isObserved, setIsObserved] = React.useState(false);
+
+  React.useEffect(() => {
+    // Array for all section titles
+    const sectionTitles = document.querySelectorAll(".section-title");
+
+    // Toggle class for each section title 
+    const titleObserver = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          entry.target.classList.toggle("title-show", entry.isIntersecting)
+          if (entry.isIntersecting) {
+            titleObserver.unobserve(entry.target)
+          }
+        });
+      },
+      {
+        threshold: 1,
+      }
+    );
+
+    // Observe each section title
+    sectionTitles.forEach(title => {
+      titleObserver.observe(title)
+    });
+
+    // Cleanup function
+    return () => {
+      sectionTitles.forEach(title => {
+      titleObserver.unobserve(title)
+    });
+    };
+  }, []);
+
   return (
     <>
       <main>
@@ -53,9 +88,9 @@ export default function Portfolio() {
             like HTML, CSS, Javascript, and React.
           </p>
         </section>
-        <About skills={skills}/>
-        <Projects projects={projects}/>
-        <Contact />
+        <About skills={skills} titleRef={observeRef} isObserved={isObserved} />
+        <Projects projects={projects} titleRef={observeRef} isObserved={isObserved}/>
+        <Contact titleRef={observeRef} isObserved={isObserved}/>
       </main>
     </>
   )

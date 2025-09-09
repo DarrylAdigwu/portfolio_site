@@ -3,7 +3,7 @@ main > section.about-container {
   background-color: #d8d1c6;
   background-blend-mode: overlay;
   /* background-image: url("../images/grain2.svg"); */
-  color: #746250;
+  color: 	#898e6b;
   padding: 3rem 2rem;
   min-width: 300px;
   width: 100%;
@@ -24,12 +24,8 @@ section.about-container > div.about-grid {
   grid-gap: 5px;
 }
 
-div.about-grid > h2 {
-  grid-area: h; 
-  font-size: 3rem;
-  margin: 0;
-  margin-bottom: 2rem;
-  color: #ae461c;
+div.about-grid > h2.section-title {
+  grid-area: h;
 }
 
 div.about-descr {
@@ -40,7 +36,7 @@ div.about-descr {
 }
 
 div.about-descr > p {
-  color: #252524;
+  color: #2b2b29;
   font-size: .875rem;
 }
 
@@ -61,8 +57,8 @@ div.about-img-full {
 
 div.about-img > img {
   height: 100%;
-  border-left: 2px solid #746250;
-  border-bottom: 2px solid #746250;
+  border-left: 2px solid #914C21;
+  border-bottom: 2px solid #914C21;
 }
 
 div.about-grid > div.resume {
@@ -81,9 +77,24 @@ div.resume > button {
   border-radius: 6px;
   padding: .5rem .75rem;
   font-size: 1.25rem;
-  background-color: #252524;
+  border: 1px solid #2b2b29;
+  box-shadow: 2px 4px 4px 2px rgba(43,43,41, .65);
+  background-color:#2b2b29;
   color: #d8d1c6;
-  border: none;
+  cursor: pointer;
+  font-family: "Russo One";
+}
+
+div.resume > button:hover {
+  border: 1px solid #2b2b29;
+  background-color: rgba(43,43,41, .95);
+}
+
+div.resume > button:active {
+  border: 1px solid #914C21;
+  background-color: #d8d1c6;
+  color: #2b2b29;
+  box-shadow: none;
 }
 
 
@@ -100,10 +111,10 @@ section.skills-container > h3 {
   margin: 0;
   margin-bottom: 1rem;
   background-color: transparent;
-  border: 1px solid #252524;
+  border: 1px solid #2b2b29;
   border-left: none;
   border-right: none;
-  color: #ae461c;
+  color: #914C21;
   /* border-radius: 6px; */
   padding: .5rem 1rem;
 }
@@ -122,13 +133,12 @@ div.skills > span {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(174,70,28, .125);
-  border: 1px solid #ae461c;
+  background-color: rgba(145,76,33, .15);
+  border: 1px solid #914C21;
   border-radius: 6px;
   padding: 1vh .75vh;
   width: 100%;
-  color: #ae461c;
-  text-align: center;
+  color: #914C21;
 }
 
 /* Screen sizes 380px */
@@ -144,7 +154,7 @@ div.skills > span {
   main > section.about-container {
     display: flex;
     flex-wrap: wrap;
-    padding: 3rem 4rem;
+    padding: 8rem 4rem;
   }
 
  section.about-container > div.about-grid  {
@@ -157,13 +167,12 @@ div.skills > span {
     align-content: center;
     grid-template-columns: 16rem;
     grid-template-rows: auto minmax(auto, 18rem) auto auto;
-    grid-gap: 2.5rem;
+    grid-gap: 2rem;
   }
 
-  div.about-grid > h2 {
+  div.about-grid >  h2.section-title {
     margin-bottom: 0;
   }
-
 
   div.about-descr {
     margin: 0;
@@ -213,7 +222,7 @@ div.skills > span {
   section.skills-container > div.skills {
     margin: 0;
     width: 100%;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 
   div.skills > span {
@@ -237,10 +246,6 @@ div.skills > span {
 
 /* Screen sizes 1024px */
 @media only screen and (min-width: 1024px) {
-  main > section.about-container {
-    /* border: 1px solid red; */
-  }
-
   section.about-container > div.about-grid  {
     grid-template-columns: repeat(12, 1fr);
     grid-template-areas: 
@@ -251,10 +256,6 @@ div.skills > span {
     ;
     grid-template-rows: auto 16rem auto auto;
     align-items: center;
-  }
-
-  div.about-grid > h2 {
-    font-size: 4rem;
   }
 
   div.about-descr {
@@ -277,9 +278,7 @@ div.skills > span {
     grid-area: i;
     height: 100%;
     border-radius: 6px;
-    /* border: 2px solid #746250;
-    border-right: 2px solid #746250; */
-    background-color: rgba(174,70,28, .125);
+    background-color: rgba(145,76,33, .25);
   }
 
   div.about-img-full > img {
@@ -297,8 +296,14 @@ div.skills > span {
 
 /* Screen sizes 1200px */
 @media only screen and (min-width: 1200px) {
-  div.about-grid > h2 {
-    font-size: 5rem;
+  section.about-container > div.about-grid  {
+    grid-template-areas: 
+      "h h h h h h h h h h h h"
+      "d d d d d d d . i i i i"
+      "r r r r r r r r r r r r"
+      "s s s s s s s . . . . ."
+    ;
+    grid-template-rows: auto 18rem auto auto;
   }
 
   div.about-descr {
@@ -306,6 +311,6 @@ div.skills > span {
   }
 
   div.about-descr > p {
-    line-height: 1.5rem;
+    line-height: 1.65rem;
   }
 }
