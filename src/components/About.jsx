@@ -12,6 +12,18 @@ export default function About(props) {
     )
   });
   
+  // Fetch resume pdf
+  function resumeDownload() {
+    const resumePdf = "../../public/files/darryls-resume.pdf";
+    console.log(resumePdf)
+    const link = document.createElement("a");
+    link.href = resumePdf;
+    link.download = `Darryl's Resume.pdf`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
   return(
     <section id="about-section" className="about-container">
       
@@ -54,7 +66,7 @@ export default function About(props) {
           <img src={full} alt="image of me"/>
         </div>
         <div className="resume">
-          <button>Resume</button>
+          <button onClick={resumeDownload}>Resume</button>
         </div>
         <section id="skills-section" className="skills-container">
           <h3>my skills</h3>
