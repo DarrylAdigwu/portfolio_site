@@ -7,7 +7,12 @@ export default function Contact(props) {
   return(
     <section id="contact-section" className="contact-container">
       <div className="contact-header">
-        <h2 className="section-title">contact</h2>
+        <h2
+        ref={props.titleRef} 
+        className={`section-title ${props.isObserved ? `title-show` : null}`}
+        >
+          contact
+        </h2>
       </div>
       <p>
         Please feel free to email 

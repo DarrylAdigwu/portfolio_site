@@ -8,7 +8,7 @@ main > section.projects-container {
 }
 
 section.projects-container > div.projects-header {
-  height: 5rem;
+  height: 6rem;
 }
 
 div.projects-header > h2.section-title {
@@ -16,7 +16,6 @@ div.projects-header > h2.section-title {
 }
 
 section.projects-container > div.projects-list {
-  margin-top: 5rem;
   margin-bottom: 2rem;
   height: fit-content;
 }
@@ -96,6 +95,7 @@ div.tools > span.display-tools {
     gap: 1rem;
     justify-content: space-between;
     max-width: 100%;
+    margin-top: 3rem;
   }
   
   div.projects-list > div.project {

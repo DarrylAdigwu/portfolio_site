@@ -3,13 +3,27 @@ import { Link } from "react-router";
 import logo from "../assets/images/bare-logo.png"
 
 export default function Header() {
+  const dropDownRef = React.useRef();
   
   function dropDown(event) {
     const offScreen = document.getElementById("off-screen");
-    const burgerBtn = document.getElementById("burger")
+    const burgerBtn = document.getElementById("burger");
+    const bodyScroll = document.body;
     if(event) {
-      offScreen.classList.toggle("active");
-      burgerBtn.classList.toggle("non-active")
+      offScreen.classList.add("active");
+      burgerBtn.classList.add("non-active");
+      bodyScroll.style.overflow = "hidden";
+    }
+  }
+
+  function cancelDropDown(event) {
+    const offScreen = document.getElementById("off-screen");
+    const burgerBtn = document.getElementById("burger");
+    const bodyScroll = document.body;
+    if(event) {
+      offScreen.classList.remove("active");
+      burgerBtn.classList.remove("non-active");
+      bodyScroll.style.overflow = "scroll";
     }
   }
   
@@ -28,11 +42,11 @@ export default function Header() {
         <li></li>
       </nav>
       <nav id="off-screen">
-        <button id="exit-button" onClick={dropDown}>&times;</button>
-        <li onClick={dropDown}><a href="#about-section">about</a></li>
-        <li onClick={dropDown}><a href="#skills-section">skills</a></li>
-        <li onClick={dropDown}><a href="#projects-section">projects</a></li>
-        <li onClick={dropDown}><a href="#contact-section">contact</a></li>
+        <button id="exit-button" onClick={cancelDropDown}>&times;</button>
+        <li onClick={cancelDropDown}><a href="#about-section">about</a></li>
+        <li onClick={cancelDropDown}><a href="#skills-section">skills</a></li>
+        <li onClick={cancelDropDown}><a href="#projects-section">projects</a></li>
+        <li onClick={cancelDropDown}><a href="#contact-section">contact</a></li>
       </nav>
     </header>
   )

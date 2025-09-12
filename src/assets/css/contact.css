@@ -10,8 +10,7 @@ main > section.contact-container {
 }
 
 section.contact-container > div.contact-header {
-  height: 5rem;
-  margin-bottom: 3rem;
+  height: 6rem;
 }
 
 section.contact-container > p {
@@ -83,6 +82,14 @@ Form > button:active {
 @media only screen and (min-width: 768px) {
   main > section.contact-container {
     padding: 6rem 4rem;
+  }
+
+  section.contact-container > div.contact-header {
+    height: 6rem;
+  }
+
+  section.contact-container > p {
+    margin-top: 3rem;
   }
 
   Form > input {
