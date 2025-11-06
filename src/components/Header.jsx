@@ -28,7 +28,7 @@ export default function Header() {
   }
   
   return(
-    <header>
+    <header id="header-section">
       <img src={logo} alt="logo" className="logo"/>
       <nav id="nav-bar">
         <li><a href="#about-section">about</a></li>

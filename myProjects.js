@@ -52,7 +52,7 @@ export default [
       src: `${tenzies}`,
       alt: "Photo of tenzies game"
     },
-    skills: ["HTML", "CSS", "Javascript", "React", "Vercel"],
+    skills: ["HTML", "CSS", "Javascript", "Typescript", "React", "Vercel"],
     description: `The classic dice game developed with React.`,
   },
   {
@@ -63,7 +63,7 @@ export default [
       src: `${endgame}`,
       alt: "Photo of assembly endgame game"
     },
-    skills: ["HTML", "CSS", "Javascript", "React", "Netlify"],
+    skills: ["HTML", "CSS", "Javascript", "Typescript", "React", "Netlify"],
     description: `A classic game of hangman with coding themes.`,
   },
 ]

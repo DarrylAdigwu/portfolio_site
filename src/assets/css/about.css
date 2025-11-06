@@ -2,7 +2,6 @@
 main > section.about-container {
   background-color: #d8d1c6;
   background-blend-mode: overlay;
-  /* background-image: url("../images/grain2.svg"); */
   color: 	#898e6b;
   padding: 3rem 2rem;
   min-width: 300px;
@@ -116,7 +115,6 @@ section.skills-container > h3 {
   border-left: none;
   border-right: none;
   color: #914C21;
-  /* border-radius: 6px; */
   padding: .5rem 1rem;
 }
 

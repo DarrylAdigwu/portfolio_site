@@ -10,6 +10,7 @@ import git from "./src/assets/images/git.svg"
 import github from "./src/assets/images/github.svg"
 import bootstrap from "./src/assets/images/bootstrap.svg"
 import docker from "./src/assets/images/docker.svg"
+import typescript from "./src/assets/images/typescript.svg"
 
 
 export default [
@@ -107,6 +108,22 @@ export default [
     image: {
       src: `${mongodb}`,
       alt: "mongodb logo"
+    }
+  },
+  {
+    id: 9,
+    title: "typescript",
+    image: {
+      src: `${typescript}`,
+      alt: "typescript logo"
+    }
+  },
+  {
+    id: 10,
+    title: "jasmine",
+    image: {
+      src: null,
+      alt: "typescript logo"
     }
   },
 ]

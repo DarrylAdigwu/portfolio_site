@@ -61,7 +61,6 @@ div.project > div.project-visual > a > h3:hover {
   border-radius: 4px;
   cursor: pointer;
   animation: fadeIn 300ms ease-out;
-  /*border-radius: 100% 100% 50% 50% / 10% 70% 80% 20%;*/
 }
 
 div.project > p.project-descr {
