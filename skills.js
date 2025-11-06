@@ -123,7 +123,7 @@ export default [
     title: "jasmine",
     image: {
       src: null,
-      alt: "typescript logo"
+      alt: "Jasmine testing logo"
     }
   },
 ]
