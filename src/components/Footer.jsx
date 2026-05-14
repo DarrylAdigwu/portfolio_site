@@ -32,7 +32,7 @@ export default function Footer() {
         </p>
         <hr />
         <aside className="copyright">
-          &copy; 2025 Made by Darryl Adigwu
+          &copy; 2026 Made by Darryl Adigwu
         </aside>
       </div>
     </footer>
