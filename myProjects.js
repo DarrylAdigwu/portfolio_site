@@ -1,14 +1,28 @@
 import maduwedding from "./src/assets/images/tochiandyvonne.png";
-import fittrack from "./src/assets/images/fittrack_mock.jpeg";
-import portfolio_site from "./src/assets/images/darryladigwu_mock.jpeg";
+import fittrack from "./src/assets/images/fittrack.png";
+import portfolio_site from "./src/assets/images/portfolio.png";
 import tenzies from "./src/assets/images/tenzies_game.jpeg";
 import endgame from "./src/assets/images/assembly_endgame.jpeg";
-
+import slash from "./src/assets/images/slash.png";
 
 export default [
   {
     id: 1,
-    title: "FitTrack Site",
+    title: "SLASH S&E",
+    link: "https://www.slashse.com/",
+    image: {
+      src: `${slash}`,
+      alt: "SLASH sports site homepage"
+    },
+    skills: [
+      "React","HTML", "CSS", "Typescript", "Next.js",
+       "Bootstrap", "Vercel"
+    ],
+    description: `Professional web app designed to vizualize SLASH sports core values`,
+  },
+  {
+    id: 2,
+    title: "FitTrack",
     link: "https://www.fittracker.us",
     image: {
       src: `${fittrack}`,
@@ -22,7 +36,7 @@ export default [
     description: `Fully functional web app for planning and recording workouts.`,
   },
   {
-    id: 2,
+    id: 3,
     title: "My Portfolio",
     link: "https://www.darryladigwu.com",
     image: {
@@ -34,7 +48,7 @@ export default [
     `,
   },
   {
-    id: 3,
+    id: 4,
     title: "The Madu Wedding",
     link: "https://tochiandyvonne.onrender.com/",
     image: {
@@ -45,8 +59,8 @@ export default [
     description: `Multipage static website for a wedding.`,
   },
   {
-    id: 4,
-    title: "Tenzies game",
+    id: 5,
+    title: "Tenzies",
     link: "https://darryls-tenzies-game.vercel.app/",
     image: {
       src: `${tenzies}`,
@@ -56,7 +70,7 @@ export default [
     description: `The classic dice game developed with React.`,
   },
   {
-    id: 5,
+    id: 6,
     title: "Assembly Endgame",
     link: "https://the-assembly-endgame.netlify.app/",
     image: {

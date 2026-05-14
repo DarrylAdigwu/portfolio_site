@@ -18,10 +18,10 @@ export default function Projects(props) {
     return(
       <div key={`${project.id}`} className={`project`}>
         <div className="project-visual">
-          <a href={`${project.link}`} target="_blank">
+          <a className="project-visual-img" href={`${project.link}`} target="_blank">
             <img src={`${project.image.src}`} alt={`${project.image.alt}`}/>
           </a>
-          <a href={`${project.link}`} target="_blank">
+          <a className="project-visual-title" href={`${project.link}`} target="_blank">
             <h3>{project.title}</h3>
           </a>
         </div>
@@ -39,8 +39,8 @@ export default function Projects(props) {
     <section id="projects-section" className="projects-container">
       <div className="projects-header">
         <h2
-        ref={props.titleRef} 
-        className={`section-title ${props.isObserved ? `title-show` : null}`}
+          ref={props.titleRef} 
+          className={`section-title ${props.isObserved ? `title-show` : null}`}
         >
           projects
         </h2>
