@@ -17,7 +17,7 @@ let idNum = 0;
 export default [
   {
     id: idNum +=1,
-    title: 'javascript',
+    title: 'JavaScript',
     image: {
       src: `${javascript}`,
       alt: "javascript logo"
@@ -25,95 +25,7 @@ export default [
   },
   {
     id: idNum +=1,
-    title: 'css',
-    image: {
-      src: `${css}`,
-      alt: "css logo"
-    }
-  },
-  {
-    id: idNum +=1,
-    title: "html",
-    image: {
-      src: `${html}`,
-      alt: "html logo"
-    }
-  },
-  {
-    id: idNum +=1,
-    title: "react",
-    image: {
-      src: `${react}`,
-      alt: "react logo"
-    }
-  },
-  {
-    id: idNum +=1,
-    title: "mysql",
-    image: {
-      src: `${mysql}`,
-      alt: "mysql logo"
-    }
-  },
-  {
-    id: idNum +=1,
-    title: "git",
-    image: {
-      src: `${git}`,
-      alt: "git logo"
-    }
-  },
-  {
-    id: idNum +=1,
-    title: "github",
-    image: {
-      src: `${github}`,
-      alt: "github logo"
-    }
-  },
-  {
-    id: idNum +=1,
-    title: "bootstrap",
-    image: {
-      src: `${bootstrap}`,
-      alt: "bootstrap logo"
-    }
-  },
-  {
-    id: idNum +=1,
-    title: "docker",
-    image: {
-      src: `${docker}`,
-      alt: "docker logo"
-    }
-  },
-  {
-    id: idNum +=1,
-    title: "node js",
-    image: {
-      src: `${nodejs}`,
-      alt: "nodejs logo"
-    }
-  },
-  {
-    id: idNum +=1,
-    title: "react router",
-    image: {
-      src: `${reactRouter}`,
-      alt: "react router logo"
-    }
-  },
-  {
-    id: idNum +=1,
-    title: "mongo db",
-    image: {
-      src: `${mongodb}`,
-      alt: "mongodb logo"
-    }
-  },
-  {
-    id: idNum +=1,
-    title: "typescript",
+    title: "TypeScript",
     image: {
       src: `${typescript}`,
       alt: "typescript logo"
@@ -121,7 +33,111 @@ export default [
   },
   {
     id: idNum +=1,
-    title: "jasmine",
+    title: "Shopify",
+    image: {
+      src: null,
+      alt: "Shopify logo"
+    }
+  },
+  {
+    id: idNum +=1,
+    title: "GraphQL",
+    image: {
+      src: null,
+      alt: "GraphQL logo"
+    }
+  },
+  {
+    id: idNum +=1,
+    title: 'CSS',
+    image: {
+      src: `${css}`,
+      alt: "css logo"
+    }
+  },
+  {
+    id: idNum +=1,
+    title: "HTML",
+    image: {
+      src: `${html}`,
+      alt: "html logo"
+    }
+  },
+  {
+    id: idNum +=1,
+    title: "React",
+    image: {
+      src: `${react}`,
+      alt: "react logo"
+    }
+  },
+  {
+    id: idNum +=1,
+    title: "MySQL",
+    image: {
+      src: `${mysql}`,
+      alt: "mysql logo"
+    }
+  },
+  {
+    id: idNum +=1,
+    title: "Git",
+    image: {
+      src: `${git}`,
+      alt: "git logo"
+    }
+  },
+  {
+    id: idNum +=1,
+    title: "Github",
+    image: {
+      src: `${github}`,
+      alt: "github logo"
+    }
+  },
+  {
+    id: idNum +=1,
+    title: "Bootstrap",
+    image: {
+      src: `${bootstrap}`,
+      alt: "bootstrap logo"
+    }
+  },
+  {
+    id: idNum +=1,
+    title: "Docker",
+    image: {
+      src: `${docker}`,
+      alt: "docker logo"
+    }
+  },
+  {
+    id: idNum +=1,
+    title: "Node.js",
+    image: {
+      src: `${nodejs}`,
+      alt: "nodejs logo"
+    }
+  },
+  {
+    id: idNum +=1,
+    title: "React Router",
+    image: {
+      src: `${reactRouter}`,
+      alt: "react router logo"
+    }
+  },
+  {
+    id: idNum +=1,
+    title: "MongoDB",
+    image: {
+      src: `${mongodb}`,
+      alt: "mongodb logo"
+    }
+  },
+  {
+    id: idNum +=1,
+    title: "Jasmine",
     image: {
       src: null,
       alt: "Jasmine testing logo"

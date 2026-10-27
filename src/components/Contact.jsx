@@ -11,7 +11,7 @@ export default function Contact(props) {
         ref={props.titleRef} 
         className={`section-title ${props.isObserved ? `title-show` : null}`}
         >
-          contact
+          Contact
         </h2>
       </div>
       <p>

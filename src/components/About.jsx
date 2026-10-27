@@ -33,17 +33,17 @@ export default function About(props) {
         ref={props.titleRef} 
         className={`section-title ${props.isObserved ? `title-show` : null}`}
         >
-          about me
+          About Me
         </h2>
         <div className="about-descr">
           <p>
-            My name is Darryl. I'm an aspiring web developer.
-            I gravitate towards front-end development because I 
-            enjoy structuring layouts, making content visually 
-            appealing, and creating user-friendly web experiences. 
-            However, throughout my journey learning front-end development 
-            I have picked up skills in DevOps and Back-end development
-            in order to create fully-functional projects.
+            My name is Darryl.  While my background is 
+            non-traditional—I have spent the last several 
+            years completely dedicated to mastering software 
+            engineering. Through professional freelance work, 
+            self-directed learning, and coursework. I have built 
+            a technical foundation in full-stack engineering and 
+            the modern JavaScript ecosystem.
           </p>
 
           <p className="middle">
@@ -70,7 +70,7 @@ export default function About(props) {
           <button onClick={resumeDownload}>Resume</button>
         </div>
         <section id="skills-section" className="skills-container">
-          <h3>my skills</h3>
+          <h3>My Skills</h3>
           <div className="skills">
             {skillList}
           </div>

@@ -135,8 +135,9 @@ div.skills > span {
   background-color: rgba(145,76,33, .15);
   border: 1px solid #914C21;
   border-radius: 6px;
-  padding: 1vh .75vh;
+  padding: 1vh .675vh;
   width: 100%;
+  word-spacing: -.15rem;
   color: #914C21;
 }
 

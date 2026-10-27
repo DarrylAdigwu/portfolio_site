@@ -80,12 +80,14 @@ export default function Portfolio() {
       <main>
         <section className="headline">
           <h1 className="name">Darryl Adigwu</h1>
-          <h1 className="highlight">front-end <br/> web developer</h1>
+          <h1 className="highlight">Software <br/> Engineer</h1>
           <p>
-            I am a self-taught front-end web developer 
-            with a passion for creating user-friendly 
-            websites and web applications using technologies 
-            like HTML, CSS, Javascript, and React.
+            Detail-oriented Full-Stack Web Developer with 
+            a background in design and strong foundation 
+            in JavaScript, TypeScript, Node.js, and relational 
+            databases. Passionate about creating technical 
+            solutions and building accessible, visually appealing, 
+            and user-friendly web applications.
           </p>
         </section>
         <About skills={skills} titleRef={observeRef} isObserved={isObserved} />

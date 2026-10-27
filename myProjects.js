@@ -7,6 +7,7 @@ import slash from "./src/assets/images/slash.png";
 import ieShops from "./src/assets/images/ie_shops.png";
 
 let idNum = 0;
+
 export default [
   {
     id: idNum += 1,

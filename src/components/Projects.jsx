@@ -42,7 +42,7 @@ export default function Projects(props) {
           ref={props.titleRef} 
           className={`section-title ${props.isObserved ? `title-show` : null}`}
         >
-          projects
+          Projects
         </h2>
       </div>
       <div className="projects-list">
