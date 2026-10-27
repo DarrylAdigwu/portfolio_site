@@ -4,10 +4,26 @@ import portfolio_site from "./src/assets/images/portfolio.png";
 import tenzies from "./src/assets/images/tenzies_game.jpeg";
 import endgame from "./src/assets/images/assembly_endgame.jpeg";
 import slash from "./src/assets/images/slash.png";
+import ieShops from "./src/assets/images/ie_shops.png";
 
+let idNum = 0;
 export default [
   {
-    id: 1,
+    id: idNum += 1,
+    title: "The IE Shop",
+    link: "https://www.theie.shop/",
+    image: {
+      src: `${ieShops}`,
+      alt: "The IE Shop site shop page"
+    },
+    skills: [
+      "Shopify", "Next.js", "Typescript", "GraphQL", "Resend",
+      "Vercel", "HTML", "CSS"
+    ],
+    description: `A custom-built, professional e-commerce application powered by a headless Shopify backend.`,
+  },
+  {
+    id: idNum += 1,
     title: "SLASH S&E",
     link: "https://www.slashse.com/",
     image: {
@@ -21,7 +37,7 @@ export default [
     description: `Professional web app designed to vizualize SLASH sports core values`,
   },
   {
-    id: 2,
+    id: idNum += 1,
     title: "FitTrack",
     link: "https://www.fittracker.us",
     image: {
@@ -36,7 +52,7 @@ export default [
     description: `Fully functional web app for planning and recording workouts.`,
   },
   {
-    id: 3,
+    id: idNum += 1,
     title: "My Portfolio",
     link: "https://www.darryladigwu.com",
     image: {
@@ -48,7 +64,7 @@ export default [
     `,
   },
   {
-    id: 4,
+    id: idNum += 1,
     title: "The Madu Wedding",
     link: "https://tochiandyvonne.onrender.com/",
     image: {
@@ -59,7 +75,7 @@ export default [
     description: `Multipage static website for a wedding.`,
   },
   {
-    id: 5,
+    id: idNum += 1,
     title: "Tenzies",
     link: "https://darryls-tenzies-game.vercel.app/",
     image: {
@@ -70,7 +86,7 @@ export default [
     description: `The classic dice game developed with React.`,
   },
   {
-    id: 6,
+    id: idNum += 1,
     title: "Assembly Endgame",
     link: "https://the-assembly-endgame.netlify.app/",
     image: {

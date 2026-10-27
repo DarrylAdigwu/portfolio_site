@@ -6,6 +6,7 @@ import full from "../assets/images/dslate.png";
 export default function About(props) {
   // Return each individual skill
   const skillList = props.skills.map((skill) => {
+    
     return(
       //<img key={`${skill.id}`} src={`${skill.image.src}`} alt={`${skill.image.alt}`} />
       <span key={`${skill.id}`}>{skill.title}</span>

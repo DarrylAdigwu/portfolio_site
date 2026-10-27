@@ -12,10 +12,11 @@ import bootstrap from "./src/assets/images/bootstrap.svg"
 import docker from "./src/assets/images/docker.svg"
 import typescript from "./src/assets/images/typescript.svg"
 
+let idNum = 0;
 
 export default [
   {
-    id: 1,
+    id: idNum +=1,
     title: 'javascript',
     image: {
       src: `${javascript}`,
@@ -23,7 +24,7 @@ export default [
     }
   },
   {
-    id: 2,
+    id: idNum +=1,
     title: 'css',
     image: {
       src: `${css}`,
@@ -31,7 +32,7 @@ export default [
     }
   },
   {
-    id: 3,
+    id: idNum +=1,
     title: "html",
     image: {
       src: `${html}`,
@@ -39,7 +40,7 @@ export default [
     }
   },
   {
-    id: 4,
+    id: idNum +=1,
     title: "react",
     image: {
       src: `${react}`,
@@ -47,7 +48,7 @@ export default [
     }
   },
   {
-    id: 7,
+    id: idNum +=1,
     title: "mysql",
     image: {
       src: `${mysql}`,
@@ -55,7 +56,7 @@ export default [
     }
   },
   {
-    id: 9,
+    id: idNum +=1,
     title: "git",
     image: {
       src: `${git}`,
@@ -63,7 +64,7 @@ export default [
     }
   },
   {
-    id: 10,
+    id: idNum +=1,
     title: "github",
     image: {
       src: `${github}`,
@@ -71,7 +72,7 @@ export default [
     }
   },
   {
-    id: 11,
+    id: idNum +=1,
     title: "bootstrap",
     image: {
       src: `${bootstrap}`,
@@ -79,7 +80,7 @@ export default [
     }
   },
   {
-    id: 12,
+    id: idNum +=1,
     title: "docker",
     image: {
       src: `${docker}`,
@@ -87,7 +88,7 @@ export default [
     }
   },
   {
-    id: 6,
+    id: idNum +=1,
     title: "node js",
     image: {
       src: `${nodejs}`,
@@ -95,7 +96,7 @@ export default [
     }
   },
   {
-    id: 5,
+    id: idNum +=1,
     title: "react router",
     image: {
       src: `${reactRouter}`,
@@ -103,7 +104,7 @@ export default [
     }
   },
   {
-    id: 8,
+    id: idNum +=1,
     title: "mongo db",
     image: {
       src: `${mongodb}`,
@@ -111,7 +112,7 @@ export default [
     }
   },
   {
-    id: 9,
+    id: idNum +=1,
     title: "typescript",
     image: {
       src: `${typescript}`,
@@ -119,7 +120,7 @@ export default [
     }
   },
   {
-    id: 10,
+    id: idNum +=1,
     title: "jasmine",
     image: {
       src: null,
