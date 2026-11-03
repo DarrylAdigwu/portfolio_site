@@ -77,17 +77,6 @@ export default [
   },
   {
     id: idNum += 1,
-    title: "Tenzies",
-    link: "https://darryls-tenzies-game.vercel.app/",
-    image: {
-      src: `${tenzies}`,
-      alt: "Photo of tenzies game"
-    },
-    skills: ["HTML", "CSS", "Javascript", "Typescript", "React", "Vercel"],
-    description: `The classic dice game developed with React.`,
-  },
-  {
-    id: idNum += 1,
     title: "Assembly Endgame",
     link: "https://the-assembly-endgame.netlify.app/",
     image: {
