@@ -52,12 +52,6 @@ export default function About(props) {
             solutions, and seeing functional products is a process I have always been 
             passionate about.
           </p>
-
-          <p>
-            Outside of coding, I enjoy outdoor activities, playing basketball,
-            spending time with friends and family, and most importantly growing 
-            in my faith.
-          </p>
         </div>  
         
         <div className="about-img">
